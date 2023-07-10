@@ -1,11 +1,11 @@
-title: John Doe # your name (or website title) here
+title: Juan S. Cruz # your name (or website title) here
 logo: "/images/logo.png?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-  First description 
+  Data as my sixth sense.
   <br><br>
-  Second description 
+  Theoretical physicist turned Data Scientist. Bringing all the expertise of years in academia, together with fresh perspectives and cutting edge tools to the industry. 
   <br><br>
-  <a href="https://www.linkedin.com/in/example/">View My LinkedIn Profile</a> 
+  <a href="https://github.com/juan-s-cruz">View My LinkedIn Profile</a> 
   
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
