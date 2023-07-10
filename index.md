@@ -2,10 +2,11 @@
 
 ---
 
-### Category Name 1 
+### Exploratory Data Analysis (EDA)
 
-[Project 1 Title](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[Airline classes analysis](https://github.com/juan-s-cruz/DS-portfolio/blob/main/Airline%20Analysis/Airline%20Analysis.ipynb)
+<img src="images/airline_analysis/violinPassengers.jpg?raw=true"/>
+<img src="images/airline_analysis/modesFirstToCoach.jpg?raw=true"/>
 
 ---
 [Project 2 Title](/pdf/sample_presentation.pdf)
