@@ -20,10 +20,11 @@
 
 ---
 
-### Category Name 2
+### Data analysis in Physics: Theoretical Cosmology
 
-- [Project 1 Title](http://example.com/)
-
+- [Example of Model testing: NEDE](https://doi.org/10.1088/1475-7516/2023/02/041))
+  <img src="images/hubbleTensionS8article/sample_triangle_bayes.png?raw=true"/>
+  <img src="images/hubbleTensionS8article/r_ns_plot.png?raw=true"/>
 
 ---
 
