@@ -6,7 +6,8 @@
 
 - [Personal implementation of Periodic KMeans: Household power consumption](https://github.com/juan-s-cruz/DS-portfolio/blob/main/household_power%20clustering/household_power-KMeans-scikit.ipynb)
   <img src="images/household_power/portfolio1.png?raw=true"/>
-  <br>
+
+
   <img src="images/household_power/portfolio2.png?raw=true"/>
 
 ---
