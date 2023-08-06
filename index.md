@@ -38,8 +38,7 @@
 ### Django framework and ArXiv.org article filtering
 
 - [Web filter and ranking of articles in theoretical physics](https://github.com/juan-s-cruz/arxivFilterX)
-  <img src="images/arxivFilterDjango/webFilter.jpg?raw=true"/>
-  <img src="images/arxivFilterDjango/webFilter2.jpg?raw=true"/>
+  <img src="images/arxivFilterDjango/webFilterCombined.png?raw=true"/>
 
 ---
 
