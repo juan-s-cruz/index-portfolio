@@ -29,9 +29,17 @@
 
 ### Data analysis in Physics: Theoretical Cosmology
 
-- [Example of Model testing - Bayesian statistics: NEDE](https://doi.org/10.1088/1475-7516/2023/02/041))
+- [Example of Model testing - Bayesian statistics: NEDE](https://doi.org/10.1088/1475-7516/2023/02/041)
   <img src="images/hubbleTensionS8article/sample_triangle_bayes.png?raw=true"/>
   <img src="images/hubbleTensionS8article/r_ns_plot.png?raw=true"/>
+
+---
+
+### Django framework and ArXiv.org article filtering
+
+- [Web filter and ranking of articles in theoretical physics](https://github.com/juan-s-cruz/arxivFilterX)
+  <img src="images/arxivFilterDjango/webFilter.jpg?raw=true"/>
+  <img src="images/arxivFilterDjango/webFilter2.jpg?raw=true"/>
 
 ---
 
