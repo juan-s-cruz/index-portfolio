@@ -45,6 +45,7 @@
 ### Fundamentals of NLP - Tweets classification
 
 - [Disaster detection from scratch](https://www.kaggle.com/code/juansroadtodata/twitting-disasters)
+  <img src="images/twittingDisasters/thumbnailTweets.png?raw=true"/>
   The notebook employs data cleaning, tokenization, feature engineering, Naive Baiyes + Logistic Reg and Hyperparameter tuning.
   
 
