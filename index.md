@@ -24,6 +24,7 @@
 - [Cover Type Classification](https://github.com/juan-s-cruz/DS-portfolio/blob/main/cover_types_DeepLearning/CoverType-classification.ipynb)
   <img src="images/cover_types_classif/soiltypes.png?raw=true"/>
   <img src="images/cover_types_classif/model_comp.jpeg?raw=true"/>
+  
   The notebook employs Keras module to create increasingly complex Sequential neural network models to classify cover types from different forests.
 
 ---
@@ -47,6 +48,7 @@
 
 - [Disaster detection from scratch](https://www.kaggle.com/code/juansroadtodata/twitting-disasters)
   <img src="images/twittingDisasters/thumbnailTweets.png?raw=true"/>
+  
   The notebook employs data cleaning, tokenization, feature engineering, Naive Baiyes + Logistic Reg and Hyperparameter tuning.
   
 
