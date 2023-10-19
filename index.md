@@ -22,7 +22,8 @@
 ## Forest Cover Type Classification with Keras and Neural Networks
 
 - [Cover Type Classification](https://github.com/juan-s-cruz/DS-portfolio/blob/main/cover_types_DeepLearning/CoverType-classification.ipynb)
-  <img src="images/cover_type_classif/soiltypes.png?raw=true"/>
+  <img src="images/cover_types_classif/soiltypes.png?raw=true"/>
+  <img src="images/cover_types_classif/model_comp.jpeg?raw=true"/>
   The notebook employs Keras module to create increasingly complex Sequential neural network models to classify cover types from different forests.
 
 ---
