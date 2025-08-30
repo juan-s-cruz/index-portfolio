@@ -1,5 +1,12 @@
-# Road to Data Science -- My Portfolio
+# The Data Science journey -- My Portfolio
 
+---
+
+## Django framework and ArXiv.org article filtering
+
+- [Web filter and ranking of articles (NLP and Deployment)](https://github.com/juan-s-cruz/arxivFilterX)
+  <img src="images/arxivFilterDjango/webFilterCombined.png?raw=true"/>
+  
 ---
 
 ## Periodic K-means and Household power consumption
@@ -35,12 +42,6 @@
   <img src="images/hubbleTensionS8article/sample_triangle_bayes.png?raw=true"/>
   <img src="images/hubbleTensionS8article/r_ns_plot.png?raw=true"/>
 
----
-
-## Django framework and ArXiv.org article filtering
-
-- [Web filter and ranking of articles in theoretical physics](https://github.com/juan-s-cruz/arxivFilterX)
-  <img src="images/arxivFilterDjango/webFilterCombined.png?raw=true"/>
 
 ---
 
