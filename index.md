@@ -1,5 +1,15 @@
+---
+layout: default
+title: Portfolio
+---
 # The Data Science journey -- My Portfolio
 
+
+## A-IT Support Resilient Ticket Assistant
+
+- [AI Agentic system for handling support tickets](https://github.com/juan-s-cruz/ai-my-tickets)
+  <img src="images/ai-my-tickets/ai_agent_at_work.png?raw=true"/>
+  
 ---
 
 ## Django framework and ArXiv.org article filtering
