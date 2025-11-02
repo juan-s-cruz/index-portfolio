@@ -1,10 +1,10 @@
 tmp/
 _site/*
 _themes/*
+.*
 *.txt
 *.lock
 *.log
-*.*
 Dockerfile
 Gemfile
 Gemfile.lock
