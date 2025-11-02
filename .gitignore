@@ -1,5 +1,10 @@
+tmp/
 _site/*
+_themes/*
 *.txt
 *.lock
-Dockerfile
 *.log
+*.*
+Dockerfile
+Gemfile
+Gemfile.lock
