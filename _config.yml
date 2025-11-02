@@ -4,11 +4,18 @@ description: # your text below (remove <br> elements if you don't need line brea
   Data Scientist with background in theoretical physics. Bringing all the expertise of years in academia, together with fresh perspectives and cutting edge tools to the financial sector.
   <br><br>
   I have over 6 years of specialized quantitative and analytical skills coming from a highly competitive academic environment and am always eager to solve problems using modern data science tools.
-  <br><br>
-  <a href="https://www.linkedin.com/in/juan-s-cruz-phd-46321b116">View My LinkedIn Profile</a> 
-  <br><br>
-  <a href="https://orcid.org/0000-0002-4310-6361">View My Publication List</a>
-remote_theme: pages-themes/minimal@v0.2.0
+linkedin_url: "https://www.linkedin.com/in/juan-s-cruz-phd-46321b116"
+orcid_url: "https://orcid.org/0000-0002-4310-6361"
+github_repository: "https://github.com/juan-s-cruz/"
+remote_theme: pages-themes/cayman@v0.2.0
+
+# === For local development only ===
+# theme: jekyll-theme-cayman
+# sass:
+#   load_paths:
+#     - _sass
+#     - assets/css
+
 plugins:
-- jekyll-remote-theme
-#google_analytics: UA-000000-0 # your Google Analytics tracking ID here
+  - jekyll-remote-theme
+

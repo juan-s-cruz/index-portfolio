@@ -2,61 +2,155 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
 {% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/custom.css?v=" | append: site.github.build_revision | relative_url }}">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
   </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-        
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
-        {% endif %}
+  <body class="site-body">
+    <div class="site-shell">
+      <a id="skip-to-content" class="skip-link" href="#content">Skip to the content.</a>
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
+      <header class="page-header" role="banner">
+        <div class="page-header__inner">
+          {% if site.logo %}
+          <div class="page-header__image">
+            <img src="{{ site.logo | relative_url }}" alt="{{ site.title | default: site.github.repository_name }} logo" />
+          </div>
+          {% endif %}
 
-        {% if site.github.is_user_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-        {% endif %}
+          <div class="page-header__content">
+            <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+            {% assign tagline = page.description | default: site.description | default: site.github.project_tagline %}
+            {% if tagline %}
+            <div class="project-tagline">{{ tagline }}</div>
+            {% endif %}
 
-        {% if site.show_downloads %}
-        <ul class="downloads">
-          <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
-          <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
-        </ul>
-        {% endif %}
+            {% if site.github.is_user_page or site.show_downloads or site.linkedin_url or site.github_repository or site.orcid_url %}
+            <div class="page-header__actions" role="navigation" aria-label="Primary links">
+              {% if site.linkedin_url %}
+              <a class="button button--ghost button--icon" href="{{ site.linkedin_url }}" rel="me">
+                <span class="button__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false" role="presentation">
+                    <path d="M20.45 2H3.55A1.55 1.55 0 0 0 2 3.55v16.9A1.55 1.55 0 0 0 3.55 22h16.9A1.55 1.55 0 0 0 22 20.45V3.55A1.55 1.55 0 0 0 20.45 2Zm-11.9 17H5.34V9.71h3.21Zm-1.61-9.53a1.86 1.86 0 1 1 0-3.72 1.86 1.86 0 0 1 0 3.72Zm13.52 9.53h-3.2v-4.58c0-1.09-.02-2.5-1.52-2.5-1.53 0-1.76 1.19-1.76 2.42V19h-3.2V9.71h3.07v1.27h.04c.43-.82 1.48-1.69 3.04-1.69 3.25 0 3.85 2.14 3.85 4.93Z" />
+                  </svg>
+                </span>
+                <span class="button__label">LinkedIn</span>
+              </a>
+              {% endif %}
+              {% assign github_profile_url = site.github_repository | default: site.github.owner_url %}
+              {% if github_profile_url %}
+              <a class="button button--ghost button--icon" href="{{ github_profile_url }}" rel="me">
+                <span class="button__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false" role="presentation">
+                    <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.52 1.03 1.52 1.03.89 1.52 2.34 1.08 2.9.83.09-.64.35-1.08.63-1.33-2.22-.26-4.55-1.11-4.55-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 2.5-.34 9.56 9.56 0 0 1 2.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.69-4.57 4.94.36.31.68.92.68 1.86 0 1.34-.01 2.42-.01 2.75 0 .27.18.58.69.48A10 10 0 0 0 12 2Z" />
+                  </svg>
+                </span>
+                <span class="button__label">GitHub</span>
+              </a>
+              {% endif %}
+              {% if site.orcid_url %}
+              <a class="button button--ghost button--icon" href="{{ site.orcid_url }}" rel="me">
+                <span class="button__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false" role="presentation">
+                    <circle cx="12" cy="12" r="10.5" fill="#A6CE39" />
+                    <path fill="#FFFFFF" d="M8.06 7.5h1.52v9.02H8.06zm3.45 0h1.52v9.02h-1.52zm5.27 3.32c1.56 0 2.83 1.36 2.83 3.19s-1.27 3.21-2.83 3.21c-1.58 0-2.85-1.38-2.85-3.21s1.27-3.19 2.85-3.19zm0 1.32c-.78 0-1.3.71-1.3 1.87s.52 1.89 1.3 1.89c.76 0 1.28-.73 1.28-1.89s-.52-1.87-1.28-1.87z" />
+                  </svg>
+                </span>
+                <span class="button__label">ORCID</span>
+              </a>
+              {% endif %}
+              {% if site.show_downloads %}
+              <a class="button button--primary button--icon" href="{{ site.github.zip_url }}">
+                <span class="button__label">Download ZIP</span>
+              </a>
+              <a class="button button--subtle button--icon" href="{{ site.github.tar_url }}">
+                <span class="button__label">Download TAR</span>
+              </a>
+              <a class="button button--ghost button--icon" href="{{ site.github.repository_url }}">
+                <span class="button__label">View on GitHub</span>
+              </a>
+              {% endif %}
+            </div>
+            {% endif %}
+          </div>
+        </div>
       </header>
-      <section>
 
-      {{ content }}
+      <main id="content" class="main-content" role="main">
+        <div class="content-wrapper">
+          {% if page.hero %}
+          <section class="intro">
+            {% if page.hero.title %}
+            <h1 class="intro__title">{{ page.hero.title }}</h1>
+            {% endif %}
+            {% if page.hero.lead %}
+            <p class="intro__lead">{{ page.hero.lead }}</p>
+            {% endif %}
+            {% if page.hero.body %}
+            <p class="intro__body">{{ page.hero.body }}</p>
+            {% endif %}
+          </section>
+          {% endif %}
 
-      </section>
-      <footer>
+          {% if page.projects %}
+          <div class="project-grid">
+            {% for project in page.projects %}
+            <article class="project-card">
+              {% assign project_date_entry = site.data.project_dates | where: 'title', project.title | first %}
+              {% if project_date_entry %}
+              <p class="project-card__date">
+                <time datetime="{{ project_date_entry.last_commit | date: '%Y-%m-%d' }}">{{ project_date_entry.last_commit | date: '%b %-d, %Y' }}</time>
+              </p>
+              {% endif %}
+              {% if project.title %}
+              <h2 class="project-card__title">{{ project.title }}</h2>
+              {% endif %}
+              {% if project.summary %}
+              <p class="project-card__summary">{{ project.summary }}</p>
+              {% endif %}
+              {% if project.details %}
+              {% for detail in project.details %}
+              <p class="project-card__details">{{ detail }}</p>
+              {% endfor %}
+              {% endif %}
+              {% if project.links %}
+              <div class="project-card__cta-group">
+                {% for link in project.links %}
+                {% assign variant = link.variant | default: 'primary' %}
+                <a class="button project-card__cta button--{{ variant }}" href="{{ link.url }}">{{ link.text }}</a>
+                {% endfor %}
+              </div>
+              {% endif %}
+              {% if project.images %}
+              <div class="project-card__media{% if project.media_layout == 'split' %} project-card__media--split{% endif %}">
+                {% for image in project.images %}
+                <img src="{{ image.src }}" alt="{{ image.alt }}" loading="lazy" />
+                {% endfor %}
+              </div>
+              {% endif %}
+            </article>
+            {% endfor %}
+          </div>
+          {% endif %}
+
+          {{ content }}
+
+        </div>
+      </main>
+
+      <footer class="site-footer">
         {% if site.github.is_project_page %}
-        <p>This website is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
         {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+        <span class="site-footer-build">Last build: <time datetime="{{ site.time | date: '%Y-%m-%dT%H:%M:%S%z' }}">{{ site.time | date: '%b %-d, %Y at %-I:%M %p %Z' }}</time></span>
       </footer>
     </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-    {% if site.google_analytics %}
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', '{{ site.google_analytics }}', 'auto');
-      ga('send', 'pageview');
-    </script>
-    {% endif %}
   </body>
 </html>
