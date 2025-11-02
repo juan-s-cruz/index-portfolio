@@ -3,8 +3,8 @@ layout: default
 title: Life in Data Science
 hero:
   title: "The Data Science Journey"
-  lead: "A portfolio of applied machine learning, analytics, and physics-driven research built for real-world impact. Welcome! Explore the highlights below."
-  body: "From agentic support assistants to cosmological model testing, I connect six years of quantitative research with pragmatic product thinking. Explore the highlights below to see how I design, ship, and interpret data-centric solutions. "
+  lead: "Here is my journey in applied machine learning, analytics, and physics-driven research built for real-world impact."
+  body: "From agentic support assistants to cosmological model testing, I connect six years of quantitative research with pragmatic product thinking. Explore the highlights below to see how I design, ship, and interpret data-centric solutions. Welcome! Explore the highlights below."
 projects:
   - title: "A-IT Support Resilient Ticket Assistant"
     summary: "An LLM-powered agent that orchestrates ticket collection, classification, and grounded responses so support teams can close loops faster."
